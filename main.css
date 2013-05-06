@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wapper{
+	width:600px;
+	background-color: #C30;
+}
+.text{
+	font-family: Arial, Helvetica, sans-serif;	
+}
