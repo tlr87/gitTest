@@ -1,6 +1,6 @@
 //Maya ASCII 2010 scene
 //Name: Test.ma
-//Last modified: Tue, May 07, 2013 11:56:18 PM
+//Last modified: Tue, May 07, 2013 11:59:46 PM
 //Codeset: 1252
 requires maya "2010";
 currentUnit -l centimeter -a degree -t film;
@@ -77,6 +77,8 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 6 ".pt[0:5]" -type "float3"  0 0 -3.5419095 0 0 -3.5419095 
+		0 -4.8463612 -3.5419095 0 -4.8463612 -3.5419095 0 -4.8463612 0 0 -4.8463612 0;
 createNode lightLinker -n "lightLinker1";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
@@ -156,6 +158,8 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :lightList1;
+select -ne :lambert1;
+	setAttr ".c" -type "float3" 1 0.32466662 0 ;
 select -ne :initialShadingGroup;
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
