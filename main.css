@@ -1,10 +1,34 @@
 @charset "utf-8";
 /* CSS Document */
 
+body{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
 #wapper{
 	width:600px;
 	background-color: #C30;
+	margin-left:auto;
+	margin-right:auto;
+	
 }
 .text{
 	font-family: Arial, Helvetica, sans-serif;	
 }
+.heading{
+color:#666;
+font-family:Arial, Helvetica, sans-serif;
+	
+}
+a:link {
+	color:#FFF;
+}      /* unvisited link */
+a:visited {
+	color:#666;
+}  /* visited link */
+a:hover {
+	color:#CCC;
+}  /* mouse over link */
+a:active {
+	color:#666;
+}  /* selected link */
